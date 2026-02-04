@@ -1,0 +1,14 @@
+name: project
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas=2.3.3
+  - sentence-transformers
+  - tensorflow
+  - tf-keras
+  - scikit-surprise
+  - spyder-kernels=3.0
+  - matplotlib
+  - seaborn
