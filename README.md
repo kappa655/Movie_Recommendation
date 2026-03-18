@@ -1,8 +1,7 @@
-# Three movie recommendation systems with movielens dataset that use collaborative and content based filtering systems. 
-# 1st Recommendation system implements 4 machine learning models from surprise library with collaborative approach. They are evaluated with RMSE, MAE metrics
-## SVD, NMF, PMF, BaselineOnly
-# 2nd Recommendation system implements a neuran network with collaborative approach and is evaluated with Binary Cross-Entropy
-# 3rd Recommendation system implements a content based filtering system using a model from sentence tranformers and cosine similarity as output function 
+# Three movie recommendation systems employing collaborative and content-based filtering techniques leveraging Movielens dataset. <br>
+# First Recommendation system implements four machine learning models (SVD, NMF, PMF, BaselineOnly) from surprise library. They are evaluated with RMSE, MAE metrics, fit and test time and output top 10 recommended movies for the user <br>
+# Second Recommendation system implements a neural network and is evaluated with Binary Cross-Entropy. <br>
+# Third Recommendation system implements a content based filtering system using a model from sentence tranformers and cosine similarity as output function 
 # Steps to reproduce the code
 ### The environment.yml contains the libraries and specific versions needed to run the code
 # Create the environment
