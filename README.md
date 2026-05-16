@@ -30,11 +30,11 @@ Second recommendation system implements a neural network and is evaluated with:
 Third recommendation system implements a content-based filtering system using a state-of-the-art model from Sentence Transformers and cosine similarity as the similarity metric.
 
 ---
-# Steps to reproduce the code
-### The environment.yml contains the libraries and specific versions needed to run the code
-# Create the environment
-### conda env create -f environment.yml
-# Activate the environment
-### conda activate myenv
-# Run the code
-### python main.py
+## Steps to reproduce the code
+The environment.yml contains the libraries and specific versions needed to run the code
+## Create the environment
+conda env create -f environment.yml
+## Activate the environment
+conda activate myenv
+## Run the code
+python main.py
