@@ -1,0 +1,8 @@
+{
+  "name": "MovieLens Recommendation System",
+  "description": "Interactive movie recommendation suite featuring collaborative filtering (SVD, PMF, NMF, Baseline), deep neural embeddings, and content-based filtering on the MovieLens dataset.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
