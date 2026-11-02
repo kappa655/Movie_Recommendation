@@ -1,6 +1,0 @@
-{
-  "summary":  "Plan and deployment guide for hosting both the Web application (React + Node/Express) and the Python recommendation pipeline together permanently for free using Render, Hugging Face Spaces, or Docker.",
-  "updatedAt":  "2026-11-02T13:56:23.286917479Z",
-  "requestFeedback":  true,
-  "userFacing":  true
-}
