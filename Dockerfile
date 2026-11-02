@@ -4,7 +4,6 @@ FROM python:3.10-slim
 # Avoid prompts during installation
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PORT=3000
-ENV NODE_ENV=production
 
 # Install Node.js 20, npm, build essentials and git
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -19,7 +18,8 @@ WORKDIR /app
 
 # Copy dependency specifications first for optimal Docker layer caching
 COPY package*.json ./
-RUN npm install
+# Install ALL dependencies (including devDependencies like typescript, tsc, vite, tsx)
+RUN npm install --include=dev
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
@@ -29,6 +29,9 @@ COPY . .
 
 # Build the React frontend production bundle
 RUN npm run build
+
+# Set production environment for runtime
+ENV NODE_ENV=production
 
 # Expose standard web port
 EXPOSE 3000
